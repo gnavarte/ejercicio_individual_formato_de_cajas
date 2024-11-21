@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Feliz</title>
+    <link id="theme-style" rel="stylesheet" href="light.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#register">Registro</a></li>
+                <li><button id="light-mode">Modo Claro</button></li>
+                <li><button id="dark-mode">Modo Oscuro</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenidos a Veterinaria Feliz</h1>
+            <p>Nos ocupamos de la salud y bienestar de tus mascotas.</p>
+            <img src="https://media.istockphoto.com/id/983625496/es/vector/golden-retriever-collie-mezcla-de-perro-de-raza-con-la-esperanza-de-ser-adoptados.jpg?s=612x612&w=0&k=20&c=vPRpaD0AJ8iacQ2rMbuqoETRz4xFcixMJZ_-Nzos21w=" 
+                 alt="Perro Golden Retriever Collie feliz esperando adopción" 
+                 style="max-width: 100%; height: auto;">
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una veterinaria dedicada a cuidar a tus mascotas como si fueran nuestras. Con más de 10 años de experiencia, ofrecemos servicios integrales de salud animal.</p>
+        </section>
+
+        <section id="register">
+            <h2>Registro de Usuarios</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Ingresa tu teléfono" required>
+
+                <label for="pet">Tipo de Mascota:</label>
+                <select id="pet" name="pet">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="ave">Ave</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Escribe tus comentarios"></textarea>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Veterinaria Feliz. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
